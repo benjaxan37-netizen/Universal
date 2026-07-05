@@ -1,0 +1,720 @@
+* {
+    font-family: monospace, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#titulo {
+    font-family: "Cinzel", serif;
+    font-size: 7rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background: linear-gradient(180deg,
+            #fff9d8 0%,
+            #ffe89b 18%,
+            #d4af37 45%,
+            #a97809 70%,
+            #5c3b0c 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 6px;
+    text-shadow:
+        0 2px 0 rgba(255, 255, 255, .15),
+        0 4px 8px rgba(0, 0, 0, .45),
+        0 12px 25px rgba(0, 0, 0, .6);
+    -webkit-text-stroke: 2px #7b5b18;
+    filter: drop-shadow(0 0 10px rgba(255, 220, 120, .35));
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 3rem;
+}
+
+h2 {
+    color: rgb(107, 134, 206);
+    padding: 10 10 16px 0;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+
+
+.contenedor-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    max-width: 650px;
+    width: 90%;
+}
+
+.menu-principal {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    background-color: #a97809;
+    padding: 12px 30px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.menu-principal a:hover {
+    color: #4a3403;
+}
+
+#menuParques {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 850px;
+    width: 90%;
+}
+
+#menuParques ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    background: #0b6b88;
+    padding: 15px 30px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#menuParques a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .3s;
+}
+
+#menuParques a:hover {
+    color: #193097;
+}
+
+
+
+main {
+    display: block;
+}
+
+section {
+    margin-bottom: 70px;
+    margin-top: 60px;
+}
+
+.Informacion {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding: 20px;
+}
+
+.InfoCos,
+.InfoRes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    margin: 8px 30px 15px 40px;
+    padding: 25px;
+    border-radius: 10px;
+    background: rgba(6, 5, 48, .9);
+}
+
+.InfoCos .info,
+.InfoRes .info {
+    flex: 1;
+}
+
+.Tobogan,
+.Kitchen {
+    flex: 0 0 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tobogan img,
+.Kitchen img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.Informacion .info {
+    flex: 1;
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.Pasaje {
+    flex: 0 0 40%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+}
+
+.Informacion,
+.Clima,
+.Cuarto,
+.InfoImp,
+.InfoCos,
+.InfoRes,
+.Nos-subimos,
+.nos-gusta-pero-da-miedo,
+.da-miedo-y-no-gusta,
+.no-nos-gusta {
+
+    margin: 20px 40px;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    background: rgba(6, 5, 48, .88);
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .30);
+
+    transition: .30s;
+
+}
+
+.Informacion:hover,
+.Clima:hover,
+.Cuarto:hover,
+.InfoImp:hover,
+.InfoCos:hover,
+.InfoRes:hover,
+.Nos-subimos:hover,
+.nos-gusta-pero-da-miedo:hover,
+.da-miedo-y-no-gusta:hover,
+.no-nos-gusta:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 14px 35px rgba(0, 0, 0, .45);
+
+}
+
+.Clima {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.info2 {
+    flex: 2;
+}
+
+.Fotos {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.Fotos img {
+    width: 150%;
+    max-width: 279px;
+    height: auto;
+}
+
+.Inicio {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/UNiversal.png") center/cover fixed;
+}
+
+.Hotel {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/Hotel.png") center/cover fixed;
+}
+
+.Parques {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/Parques.png") center/cover fixed;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 40px;
+}
+
+footer h2.futer {
+    color: #ffffff !important;
+    text-align: center !important;
+    margin: 0 auto 15px auto !important;
+    padding: 0 !important;
+    font-size: 1.8rem;
+}
+
+footer h3 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 0;
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: #a97809;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.futer {
+    text-align: center;
+}
+
+.HardRock {
+    margin-top: 40px;
+}
+
+.HardRock img {
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    height: 70%;
+}
+
+.Cuartos,
+.Comodidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 0 20px 20px 20px;
+}
+
+
+.Cuartos img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ComodidadesHotel {
+    margin: 40px;
+    border-radius: 10px;
+    background: rgba(6, 5, 48, 0.9);
+    padding: 20px;
+}
+
+.Comodidades img {
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+}
+
+.Parques h1:not(#titulo) {
+    text-align: center;
+    color: white;
+}
+
+.Parques h2 {
+    text-align: left;
+    color: #475ec4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.volver-arriba {
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+    padding: 12px 25px;
+    background-color: #a97809;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.volver-arriba:hover {
+    background-color: #7a5808;
+    transform: translateY(-2px);
+}
+
+.volver-arriba a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    width: fit-content;
+    height: 40%;
+}
+
+.Logo {
+    display: flex;
+    display: inline-block;
+    width: 5%;
+    height: auto;
+}
+
+
+
+
+
+.logoHorario {
+    transition: .35s;
+}
+
+.cardHorario:hover .logoHorario {
+    transform: scale(1.08);
+}
+
+.cardHorario {
+    position: relative;
+    overflow: hidden;
+}
+
+.cardHorario::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(#34d9ff, #0b6b88);
+}
+
+.Horarios {
+    background: rgba(6, 5, 48, .92);
+    border-radius: 15px;
+    margin: 40px;
+    padding: 30px;
+    color: white;
+}
+
+.Horarios h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.Horarios h2 a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.Horarios h2 a:hover {
+    color: #3cb6ff;
+}
+
+.cardsHorarios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardHorario {
+    display: grid;
+    grid-template-columns: 240px 1fr 180px;
+    align-items: center;
+
+    background: rgba(18, 25, 80, .55);
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 15px;
+
+    padding: 25px 30px;
+
+    transition: .3s;
+}
+
+.cardHorario:hover {
+    transform: translateY(-5px);
+    border-color: #3cb6ff;
+    box-shadow: 0 0 25px rgba(60, 182, 255, .25);
+}
+
+.logoHorario {
+    width: 180px !important;
+    height: 90px !important;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    transition: .35s;
+}
+
+.infoHorario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.horaGrande {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.infoHorario small {
+    color: #cfcfcf;
+    font-size: 15px;
+}
+
+.earlyHorario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #0b6b88, #2a8eb3);
+
+    border-radius: 12px;
+
+    padding: 18px;
+}
+
+.earlyHorario span {
+    color: #d9f5ff;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.earlyHorario strong {
+    color: white;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+.EarlyEntry {
+
+    margin: 40px;
+    padding: 30px;
+    border-radius: 14px;
+    background: rgba(6, 5, 48, .90);
+
+}
+
+.EarlyEntry h2 {
+
+    color: white;
+    margin-bottom: 35px;
+    text-align: left;
+
+}
+
+.cardsEarly {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+}
+
+.cardEarly {
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 690px;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    background: rgba(25, 30, 90, .45);
+
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, .12);
+
+    transition: .35s;
+
+}
+
+.cardEarly:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #2fc3ff;
+
+    box-shadow: 0 0 30px rgba(0, 180, 255, .25);
+
+}
+
+.logoEarly {
+
+    width: 180px;
+    height: 95px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: 0 auto 25px;
+
+}
+
+.hora {
+
+    width: fit-content;
+
+    margin: 0 auto 30px;
+
+    padding: 10px 22px;
+
+    background: #0b6b88;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    border-radius: 40px;
+
+}
+
+.cardEarly h4 {
+
+    color: #78cfff;
+
+    margin-bottom: 20px;
+
+    padding-left: 12px;
+
+    border-left: 4px solid #2fc3ff;
+
+    font-size: 21px;
+
+}
+
+.ride {
+
+    background: rgba(11, 107, 136, .18);
+
+    border: 1px solid rgba(47, 195, 255, .20);
+
+    border-radius: 10px;
+
+    padding: 12px 15px;
+
+    margin-bottom: 12px;
+
+    color: white;
+
+    font-size: 17px;
+
+    line-height: 1.4;
+
+    transition: .25s;
+
+}
+
+.ride:hover {
+
+    background: rgba(47, 195, 255, .22);
+
+    transform: translateX(6px);
+
+}
+
+.tip {
+
+    margin-top: auto;
+
+    border-top: 1px solid rgba(255, 255, 255, .12);
+
+    padding-top: 22px;
+
+    background: linear-gradient(135deg, #b88918, #d8aa2c);
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    color: white;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    font-weight: bold;
+
+}
+
+.tip strong {
+
+    color: white;
+
+}
+
+@media(max-width:1200px) {
+
+    .cardsEarly {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cardEarly {
+
+        min-height: auto;
+
+    }
+
+}
